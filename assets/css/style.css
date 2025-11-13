@@ -962,8 +962,14 @@ body.active { overflow: hidden; }
 
 .banner-md { height: 240px; } */
 
-.banner-lg,
-.banner-md,
+.banner-lg{
+  height: 300px; /* or any size you like */
+}
+
+.banner-md{
+  height: 300px; /* or any size you like */
+}
+
 .banner-sm {
   height: 300px; /* or any size you like */
 }
