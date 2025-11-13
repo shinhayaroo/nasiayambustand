@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foodie - Supper delicious Burger in town!</title>
+  <title>Nasi Ayam Bustand Muar</title>
 
   <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="./assets/images/logo3.png" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -32,6 +33,10 @@
   <link rel="preload" as="image" href="./assets/images/hero-banner.png" media="min-width(768px)">
   <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png" media="min-width(768px)">
   <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" href="./assets/css/style.css">
+  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
 
 </head>
 
@@ -45,7 +50,14 @@
     <div class="container">
 
       <h1>
-        <a href="#" class="logo">NasiAyamBustand<span class="span">.</span></a>
+        <!-- <a href="#" class="logo">NasiAyamBustand<span class="span">.</span></a> -->
+        <a href="#" class="logo" style="display: flex; align-items: center; gap: 8px;">
+          <img src="./assets/images/logo3.png" alt="Nasi Ayam Bustand Logo" style="height: 40px; width: auto;">
+          <span style="display: inline-block;">
+            NasiAyamBustand<span class="span" style="margin-left: 0;">.</span>
+          </span>
+        </a>
+        
       </h1>
 
       <nav class="navbar" data-navbar>
@@ -61,32 +73,58 @@
 
           <li class="nav-item">
             <a href="#food-menu" class="navbar-link" data-nav-link>Shop</a>
-          </li> -->
+          </li>
 
           <li class="nav-item">
             <a href="#order" class="navbar-link btn btn-hover" data-nav-link>Order Now</a>
           </li>
 
-          <!-- <li class="nav-item">
+          <li class="nav-item">
             <a href="#" class="navbar-link" data-nav-link>Contact Us</a>
           </li> -->
+
+          <li class="nav-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#order" class="navbar-link" data-nav-link>Order</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#menu" class="navbar-link" data-nav-link>Menu</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#delivery" class="navbar-link" data-nav-link>Delivery</a>
+          </li>
+
+          <li class="nav-item" style="list-style: none;">
+            <a href="https://api.whatsapp.com/send?phone=60177757860" 
+               class="navbar-link btn btn-hover" 
+               style="display: flex; align-items: center; gap: 8px; background-color: #1aab4f; color: white; border: none; padding: 8px 12px; text-decoration: none;">
+              <ion-icon name="logo-whatsapp" style="font-size: 20px;"></ion-icon>
+              Chat Us on WhatsApp
+            </a>
+          </li>
+          
 
         </ul>
       </nav>
 
-      <!-- <div class="header-btn-group">
-        <button class="search-btn" aria-label="Search" data-search-btn>
+      <div class="header-btn-group">
+        <!-- <button class="search-btn" aria-label="Search" data-search-btn>
           <ion-icon name="search-outline"></ion-icon>
-        </button>
+        </button> -->
 
-        <button class="btn btn-hover">Reservation</button>
+        <!-- <button class="btn btn-hover">Reservation</button> -->
 
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
-          <span class="line top"></span>
+          <!-- <span class="line top"></span> -->
           <span class="line middle"></span>
           <span class="line bottom"></span>
         </button>
-      </div> -->
+      </div>
 
     </div>
   </header>
@@ -142,16 +180,20 @@
           </div>
 
           <figure class="hero-banner">
-            <h1 class="h1 hero-title">LOGO-HERE.....</h2>
+            <!-- <h1 class="h1 hero-title">LOGO-HERE.....</h2> -->
             <!-- <img src="./assets/images/hero-banner-bg.png" width="820" height="716" alt="" aria-hidden="true"
               class="w-100 hero-img-bg"> -->
-            <!-- <img src="./assets/images/logo.png" width="520" height="416" alt="" aria-hidden="true"
+              <img src="./assets/images/logo2.png" width="520" height="416" alt="" 
+              style="margin-top: 20px; margin-bottom: 10px; margin-left: 120px; margin-right: 40px;" 
+              >
+  
+            <!-- <img src="./assets/images/logo3.png" width="520" height="416" alt="" aria-hidden="true"
               > -->
 
             <!-- <img src="./assets/images/hero-banner.png" width="700" height="637" loading="lazy" alt="Burger"
               class="w-100 hero-img"> -->
-              <!-- <img src="./assets/images/logo.png" width="700" height="637" loading="lazy" alt="Burger"
-              class="w-100 hero-img"> -->
+              <!-- <img src="./assets/images/logo3.png" width="500" height="437" loading="lazy" alt="Burger"
+              > -->
           </figure>
 
         </div>
@@ -194,7 +236,7 @@
                   Gabungan ayam lembut, nasi wangi, dan sos istimewa disajikan dengan penuh kasih.               
                 </p>
 
-                <img src="./assets/images/promo-nasiayam2.jpg" width="300" height="300" loading="lazy" alt="Maxican Pizza"
+                <img src="./assets/images/promo-nasiayam.png" width="300" height="300" loading="lazy" alt="Maxican Pizza"
                   class="w-100 card-banner">
 
               </div>
@@ -224,7 +266,7 @@
                   Rasa asli Mee Bandung Muar dengan aroma rempah dan manis udang yang sempurna.
                 </p>
 
-                <img src="./assets/images/promo-meebandung.jpg" width="300" height="300" loading="lazy" alt="Soft Drinks"
+                <img src="./assets/images/promo-meebandung.png" width="300" height="300" loading="lazy" alt="Soft Drinks"
                   class="w-100 card-banner">
 
               </div>
@@ -254,7 +296,7 @@
                   Dihidang dengan kuah panas beraroma, nasi impit lembut, dan isi ayam yang empuk.
                 </p>
 
-                <img src="./assets/images/promo-soto.jpg" width="300" height="300" loading="lazy" alt="French Fry"
+                <img src="./assets/images/promo-soto2.png" width="300" height="300" loading="lazy" alt="French Fry"
                   class="w-100 card-banner">
 
               </div>
@@ -285,7 +327,7 @@
                   Campuran cucur rangup, sayur segar, dan kuah petis yang pekat manis.
                 </p>
 
-                <img src="./assets/images/promo-rojak.jpg" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                <img src="./assets/images/promo-rojak.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
                   class="w-100 card-banner">
 
               </div>
@@ -316,7 +358,7 @@
                   Nasi lemak klasik dengan sambal pedas padu dan aroma yang memikat. 
                 </p>
 
-                <img src="./assets/images/pormo-nasilemakayam.jpg" width="300" height="300" loading="lazy" alt="Burger Kingo"
+                <img src="./assets/images/promo-nasilemakayam2.png" width="300" height="300" loading="lazy" alt="Burger Kingo"
                   class="w-100 card-banner">
 
               </div>
@@ -365,7 +407,7 @@
         - #DELIVERY
       -->
 
-      <section class="section section-divider gray delivery">
+      <section class="section section-divider gray delivery" id="order">
         <div class="container">
 
           <div class="delivery-content">
@@ -379,7 +421,21 @@
             </p>
 
             <!-- <button class="btn btn-hover">Order Now</button> -->
-            <button class="btn btn-hover" onclick="location.href='#order'">Order Now</button>
+            <!-- <button class="btn btn-hover" onclick="location.href='#order'">Order Now</button> -->
+            
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <button class="btn btn-hover" onclick="location.href='#delivery'">Order Now</button>
+              <span class="section-text; align-self: center;">or</span>
+              <a href="https://api.whatsapp.com/send?phone=60177757860" 
+                class="btn btn-hover" 
+                style="display: flex; align-items: center; gap: 6px; background-color: #1aab4f; color: white; border: none; text-decoration: none; padding: 8px 12px;">
+                <ion-icon name="logo-whatsapp" style="font-size: 20px;"></ion-icon>
+                WhatsApp Us!
+              </a>
+
+            </div>
+            
+            
 
           </div>
 
@@ -470,7 +526,7 @@
         - #FOOD MENU - Menu Istimewa
       -->
       
-      <section class="section section-divider white food-menu" id="food-menu">
+      <section class="section section-divider white food-menu" id="menu">
         <div class="container">
 
           <p class="section-subtitle">Kegemaran Ramai</p>
@@ -513,23 +569,19 @@
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/promo-nasiayam2.jpg" width="300" height="200" loading="lazy"
+                  <img src="./assets/images/promo-nasiayam2.png" width="300" height="200" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">-15%</div>
+                  <!-- <div class="badge">-15%</div> -->
 
-                  <button class="btn food-menu-btn" onclick="location.href='#order'">Order Now</button>
+                  <button class="btn food-menu-btn" onclick="location.href='#delivery'">Order Now</button>
                 </div>
 
                 <div class="wrapper">
-                  <p class="category">Chicken</p>
+                  <p class="category"></p>
 
                   <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    
                   </div>
                 </div>
 
@@ -552,23 +604,19 @@
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/promo-meebandung.jpg" width="300" height="300" loading="lazy"
+                  <img src="./assets/images/promo-meebandung2.png" width="300" height="300" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">-15%</div>
+                  <!-- <div class="badge">-15%</div> -->
 
-                  <button class="btn food-menu-btn" onclick="location.href='#order'">Order Now</button>
+                  <button class="btn food-menu-btn" onclick="location.href='#delivery'">Order Now</button>
                 </div>
 
                 <div class="wrapper">
-                  <p class="category">Chicken</p>
+                  <p class="category"></p>
 
                   <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    
                   </div>
                 </div>
 
@@ -591,23 +639,19 @@
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/promo-soto.jpg" width="300" height="300" loading="lazy"
+                  <img src="./assets/images/promo-soto.png" width="300" height="300" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">-15%</div>
+                  <!-- <div class="badge">-15%</div> -->
 
-                  <button class="btn food-menu-btn" onclick="location.href='#order'">Order Now</button>
+                  <button class="btn food-menu-btn" onclick="location.href='#delivery'">Order Now</button>
                 </div>
 
                 <div class="wrapper">
-                  <p class="category">Chicken</p>
+                  <p class="category"></p>
 
                   <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    
                   </div>
                 </div>
 
@@ -630,23 +674,19 @@
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/promo-rojak.jpg" width="300" height="200" loading="lazy"
+                  <img src="./assets/images/promo-rojak3.png" width="300" height="200" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">-15%</div>
+                  <!-- <div class="badge">-15%</div> -->
 
-                  <button class="btn food-menu-btn" onclick="location.href='#order'">Order Now</button>
+                  <button class="btn food-menu-btn" onclick="location.href='#delivery'">Order Now</button>
                 </div>
 
                 <div class="wrapper">
-                  <p class="category">Chicken</p>
+                  <p class="category"></p>
 
                   <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    
                   </div>
                 </div>
 
@@ -669,23 +709,19 @@
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/pormo-nasilemakayam.jpg" width="300" height="300" loading="lazy"
+                  <img src="./assets/images/promo-nasilemakayam.png" width="300" height="300" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">-15%</div>
+                  <!-- <div class="badge">-15%</div> -->
 
-                  <button class="btn food-menu-btn" onclick="location.href='#order'">Order Now</button>
+                  <button class="btn food-menu-btn" onclick="location.href='#delivery'">Order Now</button>
                 </div>
 
                 <div class="wrapper">
-                  <p class="category">Chicken</p>
+                  <p class="category"></p>
 
                   <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    
                   </div>
                 </div>
 
@@ -708,23 +744,19 @@
               <div class="food-menu-card">
 
                 <div class="card-banner">
-                  <img src="./assets/images/promo-nasiberlada.jpg" width="300" height="300" loading="lazy"
+                  <img src="./assets/images/promo-nasiayamberlada2.png" width="300" height="300" loading="lazy"
                     alt="Fried Chicken Unlimited" class="w-100">
 
-                  <div class="badge">-15%</div>
+                  <!-- <div class="badge">-15%</div> -->
 
-                  <button class="btn food-menu-btn" onclick="location.href='#order'">Order Now</button>
+                  <button class="btn food-menu-btn" onclick="location.href='#delivery'">Order Now</button>
                 </div>
 
                 <div class="wrapper">
-                  <p class="category">Chicken</p>
+                  <p class="category"></p>
 
                   <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
+                    
                   </div>
                 </div>
 
@@ -1119,28 +1151,27 @@
         - #BANNER - Order
       -->
 
-      <section class="section section-divider gray banner" id="order" >
+      <section class="section section-divider gray banner" id="delivery" >
         <div class="container">
 
           <ul class="banner-list">
 
-            <li class="banner-item banner-lg">
+            <li class="banner-item banner-sm">
               <div class="banner-card">
 
-                <img src="./assets/images/food-panda.png" width="550" height="450" loading="lazy"
-                  alt="Discount For Delicious Tasty Burgers!" class="banner-img">
+                <img src="./assets/images/grab-food2.png" width="550" height="220" loading="lazy" alt="Tasty Buzzed Pizza"
+                class="banner-img">
 
-                <div class="banner-item-content">
-                  <!-- <p class="banner-subtitle">50% Off Now!</p> -->
+              <div class="banner-item-content">
+                <h3 class="banner-title">Grab Food</h3>
 
-                  <h3 class="banner-title">Food Panda</h3>
+                <p class="banner-text">Order Sekarang!</p>
 
-                  <p class="banner-text">Order Sekarang!</p>
-
-                  <a href="https://foodpanda.go.link/hcLnl">
-                    <button class="btn">Order Here</button>
-                  </a>
-                </div>
+                <a href="https://food.grab.com/my/en/restaurant/nasi-ayam-bustand-bandar-diraja-delivery/1-C7T2C23DRF6BAJ?sourceID=20251107_001503_1484E947C1444BC3A03CC06629FCE710_MEXMPS&nameSlug=online-delivery&id=1-C7T2C23DRF6BAJ">
+                  <button class="btn">Order Here</button>
+                </a>
+              </div>
+                
 
               </div>
             </li>
@@ -1183,21 +1214,25 @@
               </div>
             </li>
 
-            <li class="banner-item banner-md">
+            <li class="banner-item banner-lg">
               <div class="banner-card">
 
-                <img src="./assets/images/grab-food.png" width="550" height="220" loading="lazy" alt="Tasty Buzzed Pizza"
-                  class="banner-img">
+                <img src="./assets/images/food-panda.png" width="550" height="450" loading="lazy"
+                  alt="Discount For Delicious Tasty Burgers!" class="banner-img">
 
                 <div class="banner-item-content">
-                  <h3 class="banner-title">Grab Food</h3>
+                  <!-- <p class="banner-subtitle">50% Off Now!</p> -->
+
+                  <h3 class="banner-title">Food Panda</h3>
 
                   <p class="banner-text">Order Sekarang!</p>
 
-                  <a href="https://food.grab.com/my/en/restaurant/nasi-ayam-bustand-bandar-diraja-delivery/1-C7T2C23DRF6BAJ?sourceID=20251107_001503_1484E947C1444BC3A03CC06629FCE710_MEXMPS&nameSlug=online-delivery&id=1-C7T2C23DRF6BAJ">
+                  <a href="https://foodpanda.go.link/hcLnl">
                     <button class="btn">Order Here</button>
                   </a>
                 </div>
+
+                
 
               </div>
             </li>
@@ -1384,6 +1419,14 @@
   </main>
 
 
+<!-- WhatsApp Floating Button -->
+<!-- <a href="https://wa.me/60123456789" target="_blank" class="whatsapp-float">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a> -->
+<!-- 
+<a href="https://wa.me/60123456789?text=Hi%20there!%20I%20have%20a%20question." target="_blank" class="whatsapp-float">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a> -->
 
 
 
@@ -1412,28 +1455,28 @@
           <ul class="social-list">
 
             <li>
-              <a href="https://www.facebook.com/p/Nasi-Ayam-Bustand-61580473384639/" class="social-link">
+              <a href="https://www.facebook.com/p/Nasi-Ayam-Bustand-61580473384639/" class="social-link-fb">
                 <ion-icon name="logo-facebook"></ion-icon>
               </a>
             </li>
             
             <li>
-              <a href="https://www.instagram.com/nasiayambustandmuar/" class="social-link">
+              <a href="https://www.instagram.com/nasiayambustandmuar/" class="social-link-ig">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
             <li>
-              <a href="https://www.tiktok.com/@nasiayambustandmuar" class="social-link">
+              <a href="https://www.tiktok.com/@nasiayambustandmuar" class="social-link-tt">
                 <ion-icon name="logo-tiktok"></ion-icon>
               </a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="https://api.whatsapp.com/send?phone=60177757860" class="social-link">
                 <ion-icon name="logo-whatsapp"></ion-icon>
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -1446,16 +1489,26 @@
           </li>
 
           <li>
-            <p class="footer-list-item">+60 17-775 7860</p>
+            <p class="footer-list-item">Phone: +60 17-775 7860</p>
+          </li>
+
+          <li>
+            <!-- <a href="https://api.whatsapp.com/send?phone=60177757860" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a> -->
+            <a href="https://api.whatsapp.com/send?phone=60177757860" class="social-link2" style="display: flex; justify-content: center; align-items: center; gap: 6px; ">
+              <ion-icon name="logo-whatsapp" style="font-size: 20px;"></ion-icon>
+              <span>Chat Us on WhatsApp!</span>
+            </a>
           </li>
 
           <!-- <li>
             <p class="footer-list-item">Info@YourGmail24.com</p>
           </li> -->
 
-          <li>
+          <!-- <li>
             <address class="footer-list-item">Gerai No, GM 05 Hentian Maharani, Jalan Maharani, Taman Sri Tanjung, 84000 Muar, Johor Darul Ta'zim</address>
-          </li>
+          </li> -->
 
         </ul>
 
@@ -1466,8 +1519,18 @@
           </li>
 
           <li>
-            <p class="footer-list-item">Monday-Sunday: 07:30AM - 06:30PM</p>
+            <p class="footer-list-item">Monday - Sunday : 07:30AM - 06:30PM</p>
           </li>
+
+          <li>
+            <address class="footer-list-item">Gerai No, GM 05 Hentian Maharani, Jalan Maharani, Taman Sri Tanjung, 84000 Muar, Johor Darul Ta'zim</address>
+          </li>
+          <a href="https://www.google.com/search?client=firefox-b-d&sca_esv=740dc6ac61211c57&sxsrf=AE3TifMZuI0o2gRnpByxwpRG0guiT5J7-w:1763030033129&kgmid=/g/11xz7hqzsx&q=Nasi+Ayam+Bustand,+Muar,+Johor+(Best+Nasi+Ayam+Berlada+di+Muar)&shndl=30&shem=lcuae,uaasie,shrtsdl&source=sh/x/loc/uni/m1/1&kgs=7cb658fd3f959a6d&utm_source=lcuae,uaasie,shrtsdl,sh/x/loc/uni/m1/1" 
+          class="google" style="display: flex; justify-content: center; align-items: center; gap: 6px; ">
+            <!-- <ion-icon name="navigate-outline" style="font-size: 20px;"></ion-icon> -->
+            <img src="./assets/images/map.png" alt="Logo" style="width: 20px; height: 20px;">
+            <span>Get Directions Here</span>
+          </a>
 
           <!-- <li>
             <p class="footer-list-item">Tuesday 4PM: Till Mid Night</p>
